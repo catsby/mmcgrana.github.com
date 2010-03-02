@@ -1,0 +1,28 @@
+---
+layout: default
+title: Mark McGranaghan
+---
+
+<div id="home">  
+  <h1>Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/mmcgrana/ring">Ring</a>: Web application library for Clojure</li>
+		<li><a href="http://github.com/mmcgrana/fleetdb">FleetDB</a>: Schema-free database written in Clojure</li>
+	  <li><a href="http://github.com/bradford/cascading-clojure">cascading-clojure</a>: Cascading flows in Clojure</li>
+	  <li><a href="http://github.com/mmcgrana/clj-stacktrace">clj-stacktrace</a>: More readable stacktraces for Clojure</li>
+	  <li><a href="http://github.com/mmcgrana/clj-html">clj-html</a>: Fast HTML templates in Clojure</li>
+	  <li><a href="http://github.com/mmcgrana/thompson">thompson</a>: Computational algebra in Thompson's group F</li>
+	</ul>
+
+	<h1>Talks</h1>
+  <ul class="posts">
+		<li><a href="http://www.slideshare.net/mmcgrana/ring-web-apps-in-idiomatic-clojure">Ring</a>: Bay Area Clojure User Group</li>
+	  <li><a href="http://www.slideshare.net/mmcgrana/fleetdb-a-schemafree-database-in-clojure">FleetDB</a>: Bay Area Clojure User Group</li>
+</div>
