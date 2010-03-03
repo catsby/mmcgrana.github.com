@@ -7,7 +7,7 @@ title: noprocrast(1)
 
 <span class="meta">March 3 2010</span>
 
-Inspired by [Alex's post](http://al3x.net/2009/09/14/my-get-back-to-work-hack.html), I wrote a command line script called `noprocrast`. This script updates `/etc/hosts` to make many distracting websites unreachable from my machine:
+Inspired by [Alex's post](http://al3x.net/2009/09/14/my-get-back-to-work-hack.html), I wrote a command line script called `noprocrast`. This script updates `/etc/hosts` to make distracting websites unreachable from my machine:
 
 {% highlight sh %}
 sudo cp /etc/noprocrast_hosts /etc/hosts
