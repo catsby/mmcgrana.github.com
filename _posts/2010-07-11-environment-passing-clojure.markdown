@@ -60,15 +60,16 @@ To fix this, we need to "pass the environment" of the calling thread to the comp
 
 Here we capture the environment in the context of the caller and inject it into the timeout thread using `with-bindings*`. Now that the timeout thread sees the same thread-local environment as the caller, the external binding of `a-var` works as expected.
 
-Finally, we can extract this pattern into a function `pass-bindings` that can be used whenever we want to pass an environment across thread boundaries:
+Finally, we can extract this pattern into a macro `passing-bindings` that can be used to pass an environment across thread boundaries:
 
 {% highlight clj %}
-(defn pass-bindings [op]
-  (let [env (get-thread-bindings)]
-    #(with-bindings* env op)))
+(defmacro passing-bindings [[in-env-sym] body]
+  `(let [env# (get-thread-bindings)
+         ~in-env-sym (fn [op#] #(with-bindings* env# op#))]
+     ~body))
 
 (defn timeout3 [millis op]
-  (pass-bindings [in-env]
+  (passing-bindings [in-env]
     (.get (future-call (in-env op)) millis TimeUnit/MILLISECONDS)))
 
 (binding [a-var 4] (timeout3 1000 #(inc a-var)))
