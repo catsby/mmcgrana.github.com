@@ -7,7 +7,7 @@ title: Install Java on Ubuntu Lucid Programatically
 
 <span class="meta">June 10 2010</span>
 
-The following commands install Sun's Java 6 JRE on Ubuntu Lucid without interactively prompting the user. This script was tested Amazon EC2 AMIs `ami-2d4aa444` and `ami-fd4aa494`.
+The following commands install Sun's Java 6 JRE on Ubuntu Lucid without interactively prompting the user. This script was tested on Amazon EC2 AMIs `ami-2d4aa444` and `ami-fd4aa494`.
 
 {% highlight sh %}
 sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
