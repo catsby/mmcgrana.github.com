@@ -7,7 +7,7 @@ title: Install Java on Ubuntu Lucid Programatically
 
 <span class="meta">June 10 2010</span>
 
-The following commands install Sun's Java 6 JRE on Ubuntu Lucid without the need for the user to respond to interactive prompts. This approach has been tested specifically on the Amazon EC2 AMIs `ami-2d4aa444` and `ami-fd4aa494`.
+The following commands install Sun's Java 6 JRE on Ubuntu Lucid without interactively prompting the user. This script was tested Amazon EC2 AMIs `ami-2d4aa444` and `ami-fd4aa494`.
 
 {% highlight sh %}
 sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
@@ -30,4 +30,4 @@ sudo update-java-alternatives -s java-6-sun --jre
 java -version
 {% endhighlight %}
 
-The addition of `parter` repository to the `apt` sources list is needed because the Sun Java JDK is not available in the default `apt` repositories on Lucid. The `debconf-set-selections` and `dpkg --set-selections` calls eliminate the need for user interaction during the Java install. Finally, the `update-java-alternatives` line ensures that the `java` command on the system in question uses the Java 6 Sun JRE.
+The addition of `parter` repository to the `apt` sources list is needed because the Sun Java JRE is not available in the default `apt` repositories on Lucid. The `debconf-set-selections` and `dpkg --set-selections` calls eliminate the need for user interaction during the Java install. Finally, the `update-java-alternatives` line ensures that the `java` command on the system in question uses the Java 6 Sun JRE.
