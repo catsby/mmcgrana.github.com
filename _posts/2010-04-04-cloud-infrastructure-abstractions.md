@@ -36,7 +36,7 @@ To be concrete, I've included below a sample of cloud infrastructure abstraction
 * Email, text, phone, and xmpp sending and receiving [SendGrid](http://sendgrid.com), [Twilio](http://www.twilio.com)
 * Payment accepting, processing, and management [Amazon FPS](http://aws.amazon.com/fps/), [Chargify](http://chargify.com/)
 * Exception collection and tracking [hoptoad](http://hoptoadapp.com), [Exceptional](http://www.getexceptional.com)
-* Test execution and continues integration
+* Test execution and continuous integration
 * Log collection, analysis, and search
 * Pageview, usage pattern, and A/B analytics
 * Text-from-markup extraction
