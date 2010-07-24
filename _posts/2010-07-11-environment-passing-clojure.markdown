@@ -5,7 +5,7 @@ title: Environment Passing in Clojure
 
 # {{page.title}}
 
-<span class="meta">June 11 2010</span>
+<span class="meta">July 11 2010</span>
 
 Clojure's [vars](http://clojure.org/vars) provide a nice mechanism for managing dynamically bound state, but you need to be careful with vars when moving computations across thread boundaries. For example, suppose we implement the following timeout function:
 
