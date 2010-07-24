@@ -219,3 +219,7 @@ ul.posts {
 	clear: right;
 	margin-right: 1em;
 }
+
+img {
+  max-width: 40em;
+}
