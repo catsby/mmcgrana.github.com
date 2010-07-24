@@ -5,7 +5,7 @@ title: Developing and Deploying a Simple Clojure Web Application
 
 # {{page.title}}
 
-<span class="meta">July 11 2010</span>
+<span class="meta">July 23 2010</span>
 
 The post walks through the process of developing and deploying a simple web application in Clojure. After reading this you should be able to build your own app and deploy it to a production server.
 
