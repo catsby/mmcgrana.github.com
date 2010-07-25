@@ -298,11 +298,14 @@ We should also write a few tests for our newly developed application. Create a f
 
 You can verify that they all pass by running `lein test`.
 
-Now that we have some tests we're ready to start thinking about deploying this app to production. We'll want the app to behave slightly differently in production and development, so we'll need a way to differentiate between the two environments. I'll use the environment variable `APP_ENV` to define a `production?` var in the `adder.core` namespace:
+Now that we have some tests we're ready to start thinking about deploying this app to production. We'll want the app to behave slightly differently in production and development, so we'll need a way to differentiate between the two environments. I'll use the environment variable `APP_ENV` to define `production?` and `development?` vars in the `adder.core` namespace:
 
 {% highlight clj %}
 (def production?
   (= "production" (get (System/getenv) "APP_ENV")))
+
+(def development?
+  (not production?))
 {% endhighlight %}
 
 Use this var to update the middleware stack to look like:
@@ -313,14 +316,14 @@ Use this var to update the middleware stack to look like:
     (wrap-file "public")
     (wrap-file-info)
     (wrap-request-logging)
-    (wrap-reload '[adder.middleware adder.core])
+    (wrap-if development? wrap-reload '[adder.middleware adder.core])
     (wrap-bounce-favicon)
     (wrap-exception-logging)
-    (wrap-if production?       wrap-failsafe)
-    (wrap-if (not production?) wrap-stacktrace)))
+    (wrap-if production?  wrap-failsafe)
+    (wrap-if development? wrap-stacktrace)))
 {% endhighlight %}
 
-This code will enable a public-facing failsafe middleware in production while keeping the stacktrace middleware in development. We'll also add exception logging in both cases for additional visibility. This updated stack relies several new functions in `adder.middleware`. Add the following to the `adder.middleware` namespace declaration:
+This code will enable a public-facing failsafe middleware in production while keeping the stacktrace middleware in development. We'll also limit code reloading to development. Finally, we'll add exception logging in both cases for additional visibility. This updated stack relies on several new functions in `adder.middleware`. Add the following to the `adder.middleware` namespace declaration:
 
 {% highlight clj %}
 (:require [clj-stacktrace.repl :as strp])
