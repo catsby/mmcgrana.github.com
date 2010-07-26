@@ -15,7 +15,7 @@ Our sample app performs addition for the user. The user enters a value in each o
 
 <img src="/images/2010-07-23-eventual2.png">
 
-Before getting started on the app, make sure that you have [Leiningen](http://github.com/technomancy/leiningen) installed and that you have a [clj](/2010/03/clojure-setup.html) script available.
+Before beginning on the app, make sure that you have [Leiningen](http://github.com/technomancy/leiningen) installed.
 
 We'll start with a minimal first version of the app. In a new directory `adder`, create a file `project.clj` with the following contents:
 
@@ -29,7 +29,10 @@ We'll start with a minimal first version of the app. In a new directory `adder`,
      [ring/ring-devel "0.2.5"]
      [ring/ring-jetty-adapter "0.2.5"]
      [compojure "0.4.0"]
-     [hiccup "0.2.6"]])
+     [hiccup "0.2.6"]]
+  :dev-dependencies
+    [[lein-run "1.0.0-SNAPSHOT"]])
+
 {% endhighlight %}
 
 We'll put the main app logic in the namespace `adder.core`. Create a file at `src/adder/core.clj` with this code:
@@ -90,7 +93,7 @@ Now you're ready to test the first version of the app:
 
 {% highlight clj %}
 lein deps
-clj script/run.clj
+lein run script/run.clj
 open http://localhost:8080/
 {% endhighlight %}
 
