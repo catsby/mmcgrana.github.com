@@ -54,8 +54,8 @@ We'll put the main app logic in the namespace `adder.core`. Create a file at `sr
   (view-layout
     [:h2 "add two numbers"]
     [:form {:method "post" :action "/"}
-      [:input.math {:type "text" :name "a" :value a}] [:span.math " + "]
-      [:input.math {:type "text" :name "b" :value b}] [:br]
+      [:input.math {:type "text" :name "a"}] [:span.math " + "]
+      [:input.math {:type "text" :name "b"}] [:br]
       [:input.action {:type "submit" :value "add"}]]))
 
 (defn view-output [a b sum]
