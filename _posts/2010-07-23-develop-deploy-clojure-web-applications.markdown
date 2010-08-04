@@ -11,9 +11,8 @@ The post walks through the process of developing and deploying a simple web appl
 
 Our sample app performs addition for the user. The user enters a value in each of two text fields, the values are submitted to the app, and the app returns the corresponding sum. Eventually it will look like this:
 
-<img src="/images/2010-07-23-eventual1.png">
-
-<img src="/images/2010-07-23-eventual2.png">
+<img src="/images/2010-07-23-eventual1.png" />
+<img src="/images/2010-07-23-eventual2.png" />
 
 Before beginning on the app, make sure that you have [Leiningen](http://github.com/technomancy/leiningen) installed.
 
@@ -118,9 +117,9 @@ We'll want to separate out the main app logic that we wrote earlier from the ful
 {% endhighlight %}
 
 
-After stopping your running server and restarting it with `clj script/run.clj`, you should be able to see changes to your code in `adder.core` reflected immediately in the web interface. Also, if your application encounters any errors you will see a stacktrace indicating what went wrong:
+After stopping your running server and restarting it with `lein run script/run.clj`, you should be able to see changes to your code in `adder.core` reflected immediately in the web interface. Also, if your application encounters any errors you will see a stacktrace indicating what went wrong:
 
-<img src="/images/2010-07-23-stacktrace.png">
+<img src="/images/2010-07-23-stacktrace.png" />
 
 Speaking of errors, we may want to address some of those in our application. If a user enters something other than a number into one of the fields, we should respond with a useful error message. Update the `view-input` function to:
 
@@ -150,7 +149,7 @@ and update the `POST` route to:
 
 You can immediately verify that your changes worked by trying some invalid input:
 
-<img src="/images/2010-07-23-invalid.png">
+<img src="/images/2010-07-23-invalid.png" />
 
 We should also handle the case where the user enters an unrecognized URL. To do that, require the Ring response middleware with:
 
@@ -461,7 +460,7 @@ and check that it works by opening the production site from your local machine:
 open http://$ADDER_HOST/
 {% endhighlight %}
 
-<img src="/images/2010-07-23-public.png">
+<img src="/images/2010-07-23-public.png" />
 
 If you want to deploy a change, `rsync` up your code and then run:
 
