@@ -14,7 +14,7 @@ If you haven't seen the previous post on [developing and deploying a simple Cloj
 We'll start on this app by creating a directory `cabinet` and adding a `project.clj` file to specify the app's dependencies:
 
 {% highlight clj %}
-(defproject cabinent "0.0.1"
+(defproject cabinet "0.0.1"
   :description "REST datastore interface."
   :dependencies
     [[org.clojure/clojure "1.2.0-RC1"]
