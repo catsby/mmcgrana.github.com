@@ -28,7 +28,7 @@ This interface accepts various options. For example:
 {% highlight clj %}
 (:body (client/post "http://rest-test.heroku.com/"
          {:body "body data" :content-type "text/plain"}))
-=> "PUT http://rest-test.heroku.com/ with a 9 byte payload,
+=> "POST http://rest-test.heroku.com/ with a 9 byte payload,
     content type text/plain; charset=UTF-8"
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ The library also provides a more general interface for use in building domain-sp
 
 {% highlight clj %}
 :dependencies
-  [[clj-http "0.1.0"] ...]
+  [[clj-http "0.1.1"] ...]
 {% endhighlight %}
 
 You can learn more about the library on its [project page](http://github.com/clj-sys/clj-http). I look forward to your hearing your thoughts, suggestions, and criticisms. Let me know what you think in the comments below or on the [Clojure mailing list](http://groups.google.com/group/clojure).
