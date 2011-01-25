@@ -300,4 +300,4 @@ $ curl -X PUT -H "Content-Type: application/json" \
 
 With this error handling in place, we're ready to expose our service to clients.
 
-I hope you'll try building your own REST APIs in Clojure. Feel free to use [the source of this sample app](http://github.com/mmcgrana/cabinet) as a starting point for your own experiments.
+I hope you'll try building your own REST APIs in Clojure. Feel free to use [the source of this sample app](https://github.com/mmcgrana/cabinet) as a starting point for your own experiments.

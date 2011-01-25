@@ -7,9 +7,9 @@ title: Clojure Web Development with Ring
 
 <span class="meta">March 27 2010</span>
 
-This post provides an introduction Clojure web development with [Ring](http://github.com/mmcgrana/ring), a Clojure web application library. If you are just getting started with Clojure web development or if you are interested in the new Ring 0.2 release, this is a great place to start.
+This post provides an introduction Clojure web development with [Ring](https://github.com/mmcgrana/ring), a Clojure web application library. If you are just getting started with Clojure web development or if you are interested in the new Ring 0.2 release, this is a great place to start.
 
-Before getting started, ensure that you have [Leiningen 1.1.0](http://github.com/technomancy/leiningen) installed. We will be using Leiningen via the `lein` command to manage dependencies. Check your Leiningen install with:
+Before getting started, ensure that you have [Leiningen 1.1.0](https://github.com/technomancy/leiningen) installed. We will be using Leiningen via the `lein` command to manage dependencies. Check your Leiningen install with:
 
 {% highlight sh %}
 lein -v
@@ -144,4 +144,4 @@ To review, here is what we ended up with:
   (run-jetty #'app {:port 8080}))
 {% endhighlight %}
    
-There is a lot more to say about Ring and Clojure web development, but I hope this tutorial at least gets you started. If you'd like to learn more about Ring, visit the [Ring GitHub project](http://github.com/mmcgrana/ring), join the [Ring Google Group](http://groups.google.com/group/ring-clojure), check out the detailed [Ring namespace and function documentation](http://mmcgrana.github.com/ring/) available online, and read the [Ring spec](http://github.com/mmcgrana/ring/raw/master/SPEC).
+There is a lot more to say about Ring and Clojure web development, but I hope this tutorial at least gets you started. If you'd like to learn more about Ring, visit the [Ring GitHub project](https://github.com/mmcgrana/ring), join the [Ring Google Group](http://groups.google.com/group/ring-clojure), check out the detailed [Ring namespace and function documentation](http://mmcgrana.github.com/ring/) available online, and read the [Ring spec](https://github.com/mmcgrana/ring/raw/master/SPEC).

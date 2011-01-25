@@ -14,7 +14,7 @@ Our sample app performs addition for the user. The user enters a value in each o
 <img src="/images/2010-07-23-eventual1.png" />
 <img src="/images/2010-07-23-eventual2.png" />
 
-Before beginning on the app, make sure that you have [Leiningen](http://github.com/technomancy/leiningen) installed.
+Before beginning on the app, make sure that you have [Leiningen](https://github.com/technomancy/leiningen) installed.
 
 We'll start with a minimal first version of the app. In a new directory `adder`, create a file `project.clj` with the following contents:
 
@@ -470,4 +470,4 @@ ssh -i $ADDER_PEM ubuntu@$ADDER_HOST "sudo restart adder"
 
 I hope this post helps you develop and deploy your own Clojure web applications. If you have any questions about this post or about Clojure web development in general, feel feel to leave them in the comments. I'm also interested in hearing how others have approached the end-to-end Clojure web development and deployment process; please let me know what you think in in the comments as well.
 
-The source code for this app is available on [GitHub](http://github.com/mmcgrana/adder).
+The source code for this app is available on [GitHub](https://github.com/mmcgrana/adder).

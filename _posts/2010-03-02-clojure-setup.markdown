@@ -11,7 +11,7 @@ In this post I describe my local Clojure development setup. You might find this 
 
 I have tried to keep the setup very simple. This makes the environment easier to use, maintain, and debug.
 
-For an editor, I use [TextMate](http://macromates.com) with a [TextMate Clojure bundle](http://github.com/mmcgrana/textmate-clojure). TextMate is an unusual choice among Clojure hackers but has worked well for me. As you will see, I've designed my setup so that the editor is independent of the rest of the environment. So if you prefer another editor things will work fine.
+For an editor, I use [TextMate](http://macromates.com) with a [TextMate Clojure bundle](https://github.com/mmcgrana/textmate-clojure). TextMate is an unusual choice among Clojure hackers but has worked well for me. As you will see, I've designed my setup so that the editor is independent of the rest of the environment. So if you prefer another editor things will work fine.
 
 I don't run any Clojure code from within the editor: both the REPL and scripts are run from the command line using the following `clj` script:
 
@@ -65,7 +65,7 @@ When `clj` starts a REPL, it looks for a `user.clj` on the classpath. I have the
   (System/exit 0))
 {% endhighlight %}
 
-This provides access to the [`clj-stacktrace`](http://github.com/mmcgrana/clj-stacktrace) REPL utilities and defines a handy `quit` function.
+This provides access to the [`clj-stacktrace`](https://github.com/mmcgrana/clj-stacktrace) REPL utilities and defines a handy `quit` function.
 
 When the `clj` runs script files, it uses `~/Clojure/run.clj`, which is as follows:
 
@@ -86,4 +86,4 @@ When the `clj` runs script files, it uses `~/Clojure/run.clj`, which is as follo
 
 This script print warnings when the Clojure compiler is using Java reflection and pretty-prints any exception stacktraces with `clj-stacktrace`.
 
-Finally, I manage dependencies using [Leiningen](http://github.com/technomancy/leiningen). You can find good instructions for installing and useing Leiningen on the linked site. The Leiningen command `lein deps` pulls all dependencies required by a project into the local `lib` director, which is then picked up by the `cljcp` script and therefore available for use at the REPL and for running scripts.
+Finally, I manage dependencies using [Leiningen](https://github.com/technomancy/leiningen). You can find good instructions for installing and useing Leiningen on the linked site. The Leiningen command `lein deps` pulls all dependencies required by a project into the local `lib` director, which is then picked up by the `cljcp` script and therefore available for use at the REPL and for running scripts.

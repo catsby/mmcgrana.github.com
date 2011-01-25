@@ -48,7 +48,7 @@ The library also provides a more general interface for use in building domain-sp
     content type text/plain; charset=UTF-8"
 {% endhighlight %}
 
-`clj-http` uses a similar architecture to the [Ring](http://github.com/mmcgrana/ring) Clojure HTTP server library. It defines a simple interface abstracting the HTTP request/response cycle and implements all additional features through this interface. For example, this is how `clj-http.client/request` is defined:
+`clj-http` uses a similar architecture to the [Ring](https://github.com/mmcgrana/ring) Clojure HTTP server library. It defines a simple interface abstracting the HTTP request/response cycle and implements all additional features through this interface. For example, this is how `clj-http.client/request` is defined:
 
 {% highlight clj %}
 (def request
@@ -76,6 +76,6 @@ The library also provides a more general interface for use in building domain-sp
 
 You can learn more about the library on its [project page](https://github.com/getwoven/clj-http). I look forward to your hearing your thoughts, suggestions, and criticisms. Let me know what you think in the comments below or on the [Clojure mailing list](http://groups.google.com/group/clojure).
 
-If you are interested in Clojure HTTP libraries in general, you should also check out [`clojure-http-client`](http://github.com/technomancy/clojure-http-client), [`clj-apache-http`](http://github.com/rnewman/clj-apache-http), and [`ahc-clj`](http://github.com/neotyk/ahc-clj).
+If you are interested in Clojure HTTP libraries in general, you should also check out [`clojure-http-client`](https://github.com/technomancy/clojure-http-client), [`clj-apache-http`](https://github.com/rnewman/clj-apache-http), and [`ahc-clj`](https://github.com/neotyk/ahc-clj).
 
 Thanks to the [Bay Area Clojure Users Group](http://www.meetup.com/The-Bay-Area-Clojure-User-Group/) for the initial Ring-style-HTTP-client suggestion, to Daniel Janus for [another nudge](http://groups.google.com/group/ring-clojure/browse_thread/thread/c86557f0cd0b7a02) in this direction, to [Adam Wiggins](http://adam.heroku.com/) for the inspiration of [rest-client](http://rdoc.info/projects/archiloque/rest-client) and the `rest-test.heroku.com` site, and to [Bradford Cross](http://measuringmeasures.com/) for design and implementation collaboration. 

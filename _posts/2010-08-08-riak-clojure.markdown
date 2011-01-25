@@ -52,7 +52,7 @@ You should see something like:
 
 This indicates the three nodes have successfully joined into a Riak cluster.
 
-Let's try accessing this cluster from Clojure. We'll use the [`clj-riak`](http://github.com/mmcgrana/clj-riak) library, a wrapper for the [`riak-java-pb-client`](http://github.com/krestenkrab/riak-java-pb-client) Java library for the [Riak Protocol Buffers API](https://wiki.basho.com/display/RIAK/PBC+API). Start by `clone`ing into the repository, pulling the dependencies, and starting a REPL:
+Let's try accessing this cluster from Clojure. We'll use the [`clj-riak`](https://github.com/mmcgrana/clj-riak) library, a wrapper for the [`riak-java-pb-client`](https://github.com/krestenkrab/riak-java-pb-client) Java library for the [Riak Protocol Buffers API](https://wiki.basho.com/display/RIAK/PBC+API). Start by `clone`ing into the repository, pulling the dependencies, and starting a REPL:
 
 {% highlight sh %}
 git clone git://github.com/mmcgrana/clj-riak.git
