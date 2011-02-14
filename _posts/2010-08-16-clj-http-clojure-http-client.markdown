@@ -7,7 +7,7 @@ title: Introducing clj-http, a Clojure HTTP Client
 
 <span class="meta">August 16 2010</span>
 
-[`clj-http`](https://github.com/getwoven/clj-http) is a new Clojure HTTP client library inspired by Ring and designed for simplicity, robustness, extensibility, and testability.
+[`clj-http`](https://github.com/mmcgrana/clj-http) is a new Clojure HTTP client library inspired by Ring and designed for simplicity, robustness, extensibility, and testability.
 
 For basic use cases, it provides a high-level interface:
 
@@ -74,7 +74,7 @@ The library also provides a more general interface for use in building domain-sp
   [[clj-http "0.1.1"] ...]
 {% endhighlight %}
 
-You can learn more about the library on its [project page](https://github.com/getwoven/clj-http). I look forward to your hearing your thoughts, suggestions, and criticisms. Let me know what you think in the comments below or on the [Clojure mailing list](http://groups.google.com/group/clojure).
+You can learn more about the library on its [project page](https://github.com/mmgrana/clj-http). I look forward to your hearing your thoughts, suggestions, and criticisms. Let me know what you think in the comments below or on the [Clojure mailing list](http://groups.google.com/group/clojure).
 
 If you are interested in Clojure HTTP libraries in general, you should also check out [`clojure-http-client`](https://github.com/technomancy/clojure-http-client), [`clj-apache-http`](https://github.com/rnewman/clj-apache-http), and [`ahc-clj`](https://github.com/neotyk/ahc-clj).
 
