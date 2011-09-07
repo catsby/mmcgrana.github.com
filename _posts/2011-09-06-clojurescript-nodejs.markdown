@@ -431,7 +431,7 @@ Finally, we'll define the core request/response handling functions. This code is
 (defn listen [handler port callback]
   (let [server (.createServer http handler)]
     (.on server "clientError" (fn [e]
-      (log {:fn "listen" :even "error" :message (. e (toString))})))
+      (log {:fn "listen" :event "error" :message (. e (toString))})))
     (.listen server port "0.0.0.0" #(callback server))))
 
 (defn stop [server]
