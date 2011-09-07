@@ -70,7 +70,7 @@ Here we've used the ClojureScript compiler `cljsc` to compile our `hello.cljs` s
 
 Our choice of compilation options to `cljsc` here is important. We choose the `:simple` level `:optimization` because that gives us both a single `.js` output file, readable JavaScript code within this file, and readable stack traces on runtime errors. The `:advanced` optimization level would also result in a single `.js` file but with unreadable source code and therefore unreadable stack traces, while no optimizations produce would produce many `.js` output files unsuitable as arguments to the `node` binary. The `:pretty-print` option ensures that the JavaScript is emitted with normalized whitespace. Finally, the `:nodejs` value for the `:target` option instructs the ClojureScript compiler to adjust the the JavaScript output to bind to the Node.js runtime.
 
-Note also that we've explicitly defined our top-level entry point with `(set! *main-cli-fn* <fn>)`. This instruct the Node.js runtime binding mentioned above to invoke that function on startup.
+Note also that we've explicitly defined our top-level entry point with `(set! *main-cli-fn* <fn>)`. This instructs the Node.js runtime binding mentioned above to invoke that function on startup.
 
 
 ### Node.js Libraries
@@ -288,7 +288,7 @@ For this reason we'll also need comment out any manual `set! *main-cli-fn*` call
 ; (set! *main-cli-fn* start)
 {% endhighlight %}
 
-Now that we have some foundations in place, we can look at the event generator and processor namespaces. We'll start with `cljs-demo.generator` in `src/cljs-demo.generator.cljs`, since this namespace is relatively simple:
+Now that we have some foundations in place, we can look at the event generator and processor namespaces. We'll start with `cljs-demo.generator` in `src/cljs-demo/generator.cljs`, since this namespace is relatively simple:
 
 {% highlight clj %}
 (ns cljs-demo.generator
