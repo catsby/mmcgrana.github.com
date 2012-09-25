@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Go and Heroku
+title: Getting Started with Go on Heroku
 ---
 
 # {{page.title}}
