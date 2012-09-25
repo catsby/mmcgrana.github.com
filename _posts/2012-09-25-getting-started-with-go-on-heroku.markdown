@@ -254,7 +254,7 @@ $ git push heroku master
        http://ancient-temple-243.herokuapp.com deployed to Heroku
 {% endhighlight %}
 
-Your app should be up an running. Visit it with:
+Your app should be up and running. Visit it with:
 
 {% highlight console %}
 $ heroku open
