@@ -80,7 +80,7 @@ variable sourced in your `.bash_profile` (or `.bash_login`, etc.):
 
 {% highlight console %}
 $ echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
-$ echo 'export PATH=$PATH/bin'  >> $HOME/.bash_profile
+$ echo 'export PATH=$PATH:$GOPATH/bin'  >> $HOME/.bash_profile
 {% endhighlight %}
 
 Now open a new terminal window and try:
