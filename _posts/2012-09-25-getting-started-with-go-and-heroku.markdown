@@ -286,7 +286,7 @@ That's it - you now have a running Go app on Heroku!
 ### More Go Examples
 
 For more Go examples, you should follow [@gobyexample](https://twitter.com/gobyexample)
-on Twitter. If there is something you'd like to see an example of,
+on Twitter. If there's something you'd like to see an example of,
 let me know!
 
 
