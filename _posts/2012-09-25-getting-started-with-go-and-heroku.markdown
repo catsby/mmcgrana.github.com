@@ -230,8 +230,8 @@ Create a new Heroku app, telling it to use the [Go Heroku Buildpack](https://git
 to build your Go code:
 
 {% highlight console %}
-$ heroku create --buildpack https://github.com/kr/heroku-buildpack-go.git
-Creating ancient-temple-2434... done, stack is cedar
+$ heroku create -b https://github.com/kr/heroku-buildpack-go.git
+Creating ancient-temple-243... done, stack is cedar
 Git remote heroku added
 {% endhighlight %}
 
@@ -251,7 +251,7 @@ $ git push heroku master
        Procfile declares types -> web
 -----> Compiled slug size: 1.0MB
 -----> Launching... done, v4
-       http://ancient-temple-2434.herokuapp.com deployed to Heroku
+       http://ancient-temple-243.herokuapp.com deployed to Heroku
 {% endhighlight %}
 
 Your app should be up an running. Visit it with:
@@ -277,7 +277,7 @@ heroku[slugc]: Slug compilation finished
 heroku[web.1]: Starting process with command `demoapp`
 app[web.1]: listening...
 heroku[web.1]: State changed from starting to up
-heroku[router]: GET ancient-temple-2434.herokuapp.com/ ...
+heroku[router]: GET ancient-temple-243.herokuapp.com/ ...
 {% endhighlight %}
 
 That's it - you now have a running Go app on Heroku!
