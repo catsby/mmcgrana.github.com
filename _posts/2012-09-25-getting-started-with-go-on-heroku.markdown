@@ -192,7 +192,7 @@ With that in place, let's prepare our app for deploying to Heroku.
 
 ### Git and Procfile
 
-In order to deploy to Heroku we'll need the app is stored in Git:
+In order to deploy to Heroku we'll need the app stored in Git:
 
 {% highlight console %}
 $ git init
