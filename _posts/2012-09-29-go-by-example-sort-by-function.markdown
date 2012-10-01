@@ -7,9 +7,9 @@ title: "Go by Example: Sort by Function"
 
 <span class="meta">September 29 2012</span>
 
-_This post is a third in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
-for new posts and check out the previous examples on [Go timers and tickers](http://mmcgrana.github.com/2012/09/go-by-example-timers-and-tickers.html)
-and [Go on Heroku](http://mmcgrana.github.com/2012/09/getting-started-with-go-on-heroku.html)._
+_This post is third in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
+for new posts and check out the previous examples on [Go on Heroku](http://mmcgrana.github.com/2012/09/getting-started-with-go-on-heroku.html)
+and [Go timers and tickers](http://mmcgrana.github.com/2012/09/go-by-example-timers-and-tickers.html)._
 
 Sorting a slice by a function is a bit tricker in Go than you
 may be used to in other languages. Let's look at some examples of

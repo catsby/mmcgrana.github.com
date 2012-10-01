@@ -7,6 +7,10 @@ title: Getting Started with Go on Heroku
 
 <span class="meta">September 25 2012</span>
 
+_This post is first in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
+for new posts and check out the other examples on [Go timers and tickers](http://mmcgrana.github.com/2012/09/go-by-example-timers-and-tickers.html)
+and [Go sorting](http://mmcgrana.github.com/2012/09/go-by-example-sort-by-function.html)._
+
 [Go](http://golang.org/) is a general-purpose language for building
 simple, reliable, and fast software. It's fun to write and a good
 fit for many use cases including web apps, network services, and
@@ -282,15 +286,7 @@ heroku[router]: GET ancient-temple-243.herokuapp.com/ ...
 
 That's it - you now have a running Go app on Heroku!
 
-
-### More Go Examples
-
-For more Go examples, you should follow [@gobyexample](https://twitter.com/gobyexample)
-on Twitter. If there's something you'd like to see an example of,
-let me know!
-
-
-### Thanks
+-----
 
 Thanks to fellow Herokai [Keith Rarick](http://xph.us/), [Blake Mizerany](https://github.com/bmizerany),
 and [Ryan Smith](http://ryandotsmith.heroku.com/) for

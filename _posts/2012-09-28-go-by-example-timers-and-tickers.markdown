@@ -7,6 +7,10 @@ title: "Go by Example: Timers and Tickers"
 
 <span class="meta">September 28 2012</span>
 
+_This post is second in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
+for new posts and check out the other examples on [Go on Heroku](http://mmcgrana.github.com/2012/09/getting-started-with-go-on-heroku.html)
+and [Go sorting](http://mmcgrana.github.com/2012/09/go-by-example-sort-by-function.html)._
+
 We often want to execute Go code at some point in the future, or
 repeatedly at some interval. Go's built-in timer and ticker features
 make both of these tasks easy. Let's look at some examples to see
@@ -168,16 +172,6 @@ make this kind of cooperation very natural in Go.
 
 You can learn more about timers, tickers, and other time-related Go
 features in the [Go `time` package docs](http://golang.org/pkg/time/).
-
-
-### More Go Examples
-
-For more Go examples, follow [@gobyexample](https://twitter.com/gobyexample)
-on Twitter. If there is something you'd like to see an example of,
-let me know!
-
-Also, check out our previous example: [Getting started with Go and Heroku](https://mmcgrana.github.com/...).
-
 
 -----
 
