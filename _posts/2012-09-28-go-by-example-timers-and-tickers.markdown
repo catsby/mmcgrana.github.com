@@ -7,9 +7,7 @@ title: "Go by Example: Timers and Tickers"
 
 <span class="meta">September 28 2012</span>
 
-_This post is second in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
-for new posts and check out the other examples on [Go on Heroku](http://mmcgrana.github.com/2012/09/getting-started-with-go-on-heroku.html)
-and [Go sorting](http://mmcgrana.github.com/2012/09/go-by-example-sort-by-function.html)._
+_If you're interested in Go, be sure to check out [Go by Example](https://gobyexample.com)._
 
 We often want to execute Go code at some point in the future, or
 repeatedly at some interval. Go's built-in timer and ticker features

@@ -7,9 +7,7 @@ title: Getting Started with Go on Heroku
 
 <span class="meta">September 25 2012</span>
 
-_This post is first in a series on Go examples. Follow [@gobyexample](https://twitter.com/gobyexample)
-for new posts and check out the other examples on [Go timers and tickers](http://mmcgrana.github.com/2012/09/go-by-example-timers-and-tickers.html)
-and [Go sorting](http://mmcgrana.github.com/2012/09/go-by-example-sort-by-function.html)._
+_If you're interested in Go, be sure to check out [Go by Example](https://gobyexample.com)._
 
 [Go](http://golang.org/) is a general-purpose language for building
 simple, reliable, and fast software. It's fun to write and a good
