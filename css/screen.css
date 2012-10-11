@@ -48,6 +48,10 @@ p {
   margin: 1em 0;
 }
 
+h2 {
+  padding-top: 1em;
+}
+
 a {
   color: #00a;
 }
