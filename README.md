@@ -11,7 +11,7 @@ HTML and CSS adopted from [Jekyll](https://github.com/mojombo/jekyll).
 
 ```bash
 $ gem install jekyll
-$ jekyll --server
+$ jekyll serve --watch
 $ open http://127.0.0.1:4000/
 ```
 
