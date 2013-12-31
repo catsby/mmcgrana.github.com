@@ -191,8 +191,7 @@ Uploading ssh public key /Users/you/.ssh/id_rsa.pub
 
 With that in place, let's prepare our app for deploying to Heroku.
 
-
-### Git and Procfile
+### Git, Procfile, and Godep
 
 In order to deploy to Heroku we'll need the app stored in Git:
 
@@ -209,12 +208,22 @@ for the `web` process in our app:
 $ echo 'web: demoapp' > Procfile
 {% endhighlight %}
 
-Finally, we need to tell Heroku the directory the app usually runs
-in, since this local context won't be available to Heroku:
+The recommended way of deploying Go applications to Heroku is to use the
+[Godep tool](https://github.com/kr/godep). Godep helps build packages reproducibly by fixing their dependencies. 
+
+Install Godep:
 
 {% highlight console %}
-$ echo 'demoapp' > .godir
+$ go get github.com/kr/godep
 {% endhighlight %}
+
+Now save your dependencies:
+
+{% highlight console %}
+$ godep save 
+{% endhighlight %}
+
+This will save a list of dependencies to the file Godeps/Godeps.json, and copy their source code into Godeps/_workspace. 
 
 Add these new files to git:
 
